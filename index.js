@@ -1,5 +1,8 @@
 const readline = require('readline-sync')
-const content = {}
+const content = {
+    search: {},
+    response: {}
+}
 const credentials = require('./credentials.json')
 const robots = {
     text: require('./robots/text.js')
@@ -7,8 +10,8 @@ const robots = {
 
 
 async function main() {
-    content.searchTerm = getSearchTerm()
-    content.searchPrefix = getSearchPrefix()
+    content.search.term = getSearchTerm()
+    content.search.prefix = getSearchPrefix()
 
     await robots.text(content)
 
@@ -22,7 +25,7 @@ async function main() {
         return prefixes[optionChosed]
     }
 
-    console.log(content)
+    console.log(JSON.stringify(content))
 }
 
 main()
