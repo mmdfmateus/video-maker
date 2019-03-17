@@ -1,0 +1,23 @@
+{
+  "name": "video-maker",
+  "version": "1.0.0",
+  "description": "automation of video production based on a web search",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mmdfmateus/video-maker.git"
+  },
+  "author": "mateus mourao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mmdfmateus/video-maker/issues"
+  },
+  "homepage": "https://github.com/mmdfmateus/video-maker#readme",
+  "dependencies": {
+    "algorithmia": "^0.3.10",
+    "readline-sync": "^1.4.9"
+  }
+}
